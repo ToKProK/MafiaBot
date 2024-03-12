@@ -8,9 +8,6 @@ Mafia = telebot.TeleBot('6847605581:AAFshf6F811PHzdMu98gvEg26RRNOrLf2Y8')
 def main(message):
     Mafia.send_message(message.chat.id, 'Привет я всего лишь бот, который поможет вам начать игру.При помощи команд вы сможеле:/help - узнать информацию о командах, /play - узнать правило игры, /rules - узнать правило игры!')
 
-<<<<<<< HEAD
-@Mafia.message_handler(func=lambda message: message.text.lower() == '/help')
-=======
 @Mafia.message_handler(commands=["open_new_bot"])
 def new_bot_open(message):
     webbrowser.open("https://t.me/Punching_phone_bot")
@@ -25,11 +22,9 @@ def info(message):
 
 
 @Mafia.message_handler(func=lambda message: message.text.lower() == 'id')
->>>>>>> 7afb1911dffc4401f4bf2904cc36608a3f9002ce
 def idd(message):
     Mafia.send_message(message.chat.id, 'Присутствуют такие команды как: /rules (Правило игры), /play (присоедениться к игре)') #команда выводит команды для использования бота
 
-<<<<<<< HEAD
 @Mafia.message_handler(func=lambda message: message.text.lower() == '/rules')
 def idd(message):
     Mafia.send_message(message.chat.id, 'Правило игры!!!Мирные жители узнают что в их городе есть мафия, и они пытаються методом голосования посадить их в тюрму.Мафия же пытаются убить всех мирных жителей.У мрных жителей есть доктор и коммисар. Доктор пытается вылечит всех мирных жителей для их спасения, а коммисар пытается вычеслить мафию для помощи жителям в голосовании. Сасмое главное в этой игре коммуникация (умение лгать или же доказывать правду). Желаю вам удачи и приятной игры!!!') # команда выводит текст с правилом игры
@@ -42,7 +37,5 @@ def info(message):
 
 
 Mafia.polling(none_stop=True) # не даёт выключать компиляцию
-=======
 
 Mafia.polling(none_stop=True)
->>>>>>> 7afb1911dffc4401f4bf2904cc36608a3f9002ce
